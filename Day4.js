@@ -19,7 +19,7 @@ httpReq.onreadystatechange = (res) => {
     data = JSON.parse(httpReq.responseText);
   }
   data.forEach((country) => {
-    console.log(country.flag);
+    console.log(country.name, country.region, country.subregion, country.flag);
   });
 };
 
