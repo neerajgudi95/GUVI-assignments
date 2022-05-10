@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table Demo</title>
+    <style>
+      body {
+        text-align: center;
+        vertical-align: middle;
+      }
+      .table {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 50vh;
+      }
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+
+      td,
+      th {
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Health Chart</h2>
+    <div class="table">
+      <table class="table-bordered">
+        <col />
+        <col />
+        <col />
+        <colgroup span="4"></colgroup>
+        <col />
+        <tr>
+          <th rowspan="2" style="vertical-align: middle; text-align: center">
+            State of Health
+          </th>
+          <th
+            colspan="2"
+            style="horizontal-align: middle; text-align: center; width: 50%"
+          >
+            Fasting values
+          </th>
+          <th style="vertical-align: middle; text-align: center">
+            Rejected Reason
+          </th>
+        </tr>
+        <tr>
+          <th scope="col">Minimum</th>
+          <th scope="col">Maximum</th>
+          <th scope="col">2 hours of eating</th>
+        </tr>
+        <tr>
+          <th>Healthy</th>
+          <td>70</td>
+          <td>100</td>
+          <td>Less than 140</td>
+        </tr>
+        <tr>
+          <th>Pre-Diabetes</th>
+          <td>101</td>
+          <td>126</td>
+          <td>140-200</td>
+        </tr>
+        <tr>
+          <th>Diabetes</th>
+          <td>More than 126</td>
+          <td>N/A</td>
+          <td>More than 200</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

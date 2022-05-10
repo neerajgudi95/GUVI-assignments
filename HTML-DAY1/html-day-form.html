@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Day1 form</title>
+    <style>
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 50%;
+      }
+      p {
+        text-align: center;
+        background-color: red;
+        color: white;
+        font-size: 20px;
+        display: inline-block;
+        padding: 0 10px;
+        margin: 5px;
+        width: 92%;
+      }
+      p span {
+        font-weight: bold;
+        width: 100%;
+      }
+
+      .form {
+        border: 1px solid black;
+      }
+
+      .inputs {
+        display: flex;
+        align-items: center;
+      }
+      .form-control {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+      }
+
+      .form-control input {
+        border: none;
+        border-bottom: 1px solid black;
+        text-align: center;
+        outline: none;
+      }
+
+      .form-control input,
+      .form-control label {
+        margin: 0 20px;
+      }
+      h4 {
+        margin: 0;
+      }
+      .subscription {
+        display: flex;
+        align-items: center;
+        margin: 10px 0 10px 20px;
+      }
+      .more-info {
+        display: flex;
+        flex-direction: column;
+        margin: 10px 0 10px 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form">
+      <p>Yes! I want to subscribe to <span>Mag-O-Zine</span></p>
+      <div class="inputs">
+        <div class="form-control">
+          <input type="text" name="firstName" id="firstName" />
+          <label for="firstName">First Name</label>
+        </div>
+        <div class="form-control">
+          <input type="text" name="lastName" id="lastName" />
+          <label for="lastName">Last Name</label>
+        </div>
+      </div>
+      <div class="form-control">
+        <input type="text" name="address" id="address" />
+        <label for="address">Address</label>
+      </div>
+      <div class="inputs">
+        <div class="form-control">
+          <input type="text" name="city" id="city" />
+          <label for="city">City</label>
+        </div>
+        <div class="form-control">
+          <input type="text" name="state" id="state" />
+          <label for="state">State</label>
+        </div>
+        <div class="form-control">
+          <input type="text" name="zip" id="zip" />
+          <label for="zip">Zip</label>
+        </div>
+      </div>
+      <div class="subscription">
+        <h4>Subscription:</h4>
+        <input type="radio" name="subscription" id="subscription1" />
+        <label for="subscription1">1 year($19.95)</label>
+        <input type="radio" name="subscription" id="subscription2" />
+        <label for="subscription2">2 year($35)</label>
+      </div>
+      <div class="more-info">
+        <h4>Send me more information about:</h4>
+        <div>
+          <input type="checkbox" name="zine1" id="zine1" />
+          <label for="zine1">Computer-Zine</label>
+        </div>
+        <div>
+          <input type="checkbox" name="zine2" id="zine2" />
+          <label for="zine2">Fishing-Zine</label>
+        </div>
+        <div>
+          <input type="checkbox" name="zine3" id="zine2" />
+          <label for="zine2">Cat-O-Zine</label>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
