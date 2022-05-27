@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+form {
+    margin: 20px;
+}
+
+.firstName {
+    padding-right: 20px;
+}
+
+.main-label {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.main-label span {
+    color: red;
+    font-weight: lighter;
+}
+
+.sub-label {
+    font-size: 14px;
+}
+
+.fa-star {
+    color: gold;
+}
+
+p {
+    margin: 10px 0 0 0;
+}
+
+td,
+th {
+    font-weight: normal;
+}
+
+tbody>tr>th {
+    text-align: left;
+}
+
+td {
+    text-align: center;
+}
+
+.table>:not(caption)>*>* {
+    width: 100px;
+}
